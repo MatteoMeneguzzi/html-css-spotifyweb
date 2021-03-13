@@ -1,0 +1,5 @@
+@media screen and (max-width: 1199px) {
+	.main-content .gallery .col {
+		width: calc((100% / 4) - 15px);
+	}
+}

@@ -3,3 +3,9 @@
 .upperc {
 	text-transform: uppercase;
 }
+
+/* TITLES */
+
+h2 {
+	margin-bottom: 10px;
+}
