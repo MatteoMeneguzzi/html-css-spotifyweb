@@ -9,3 +9,15 @@
 h2 {
 	margin-bottom: 10px;
 }
+
+/* BORDER_RADIUS */
+
+.bord-rad-50 {
+	border-radius: 50%;
+}
+
+/* FOTN Size */
+
+.f-size-18 {
+	font-size: 18px;
+}

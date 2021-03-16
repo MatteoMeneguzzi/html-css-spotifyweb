@@ -18,16 +18,28 @@
 		<link rel="stylesheet" href="./css/style.css" />
 		<link rel="stylesheet" href="./css/media-q.css" />
 		<link rel="stylesheet" href="./css/utilities.css" />
+
+		<!-- FONT -->
+
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<!-- MAIN CONTENT -->
 
 		<main>
-			<!-- SIDEBAR -->
+			<!-- SIDEBAR MIN-WIDTH 650px-->
 
-			<aside>
+			<aside class="big">
+				<div class="logo">
+					<img src="./img/logo.svg" alt="logo" />
+				</div>
+
 				<nav class="navbar-side">
-					<img class="logo" src="./img/logo.svg" alt="logo" />
+					<!-- MIN-WIDTH 650 -->
 					<ul class="small-nav">
 						<li>
 							<a href="">
@@ -68,8 +80,18 @@
 						<h4 class="upperc">playlist</h4>
 						<li class="inline">
 							<a href="">
-								<div class="plus"><strong>+</strong></div>
-								<div class="action">Crea Playlist</div>
+								<div class="plus">+</div>
+								<div class="action f-size-18">Crea Playlist</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="action">Nome Playlist</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="action">Nome Playlist</div>
 							</a>
 						</li>
 						<li>
@@ -108,11 +130,52 @@
 							</a>
 						</li>
 					</ul>
+
+					<!-- MAX_WIDTH 650 -->
+
+					<ul class="mini">
+						<li>
+							<a href="">
+								<img src="./img/logo-small.svg" alt="logo-small" />
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+									<path
+										d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"
+										fill="#ffffff"
+									/>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+									<path
+										d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z"
+										fill="#ffffff"
+										fill-rule="evenodd"
+									/>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+									<path
+										d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z"
+										fill="#ffffff"
+									/>
+								</svg>
+							</a>
+						</li>
+					</ul>
 				</nav>
 
 				<!-- ASIDE FOOTER -->
 
-				<footer class="profile">
+				<section class="profile">
 					<ul class="small-nav">
 						<li>
 							<a href="">
@@ -130,14 +193,29 @@
 							</a>
 						</li>
 					</ul>
-				</footer>
+
+					<!-- Min WIDTH 550px -->
+
+					<ul class="small-nav">
+						<li>
+							<a href="">
+								<i class="fas fa-arrow-down"></i>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="./img/profile.svg" alt="profile" />
+							</a>
+						</li>
+					</ul>
+				</section>
 			</aside>
 
 			<!-- CONTENT -->
 			<section class="main-content">
 				<!-- CONTENT-HEADER -->
 				<header class="content-header">
-					<button class="btn-upgrade" type="button">aaaaaaa</button>
+					<button class="btn-upgrade" type="button">EFFETTUA L'UPGRADE</button>
 				</header>
 
 				<!-- CONTENT MAIN -->
@@ -171,22 +249,48 @@
 					<h2>Recently Played</h2>
 					<div class="gallery">
 						<div class="col">
-							<div class="participant"></div>
+							<div class="participant">
+								<img src="./img/metal_lifting.jpg" alt="heavy-metal" />
+								<h3>Heavy Metal</h3>
+								<p>Subtitle</p>
+							</div>
 						</div>
 						<div class="col">
-							<div class="participant"></div>
+							<div class="participant">
+								<img src="./img/stranger.jpeg" alt="stranger-things" />
+								<h3>
+									Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)
+								</h3>
+								<p>Kyle Dixon & Michael Stein</p>
+							</div>
 						</div>
 						<div class="col">
-							<div class="participant"></div>
+							<div class="participant">
+								<img src="./img/aquietplace.jpeg" alt="quiet-place" />
+								<h3>A quiet place</h3>
+								<p>Subtitle</p>
+							</div>
 						</div>
 						<div class="col">
-							<div class="participant"></div>
+							<div class="participant">
+								<img src="./img/split.jpeg" alt="split" />
+								<h3>Split</h3>
+								<p>Subtitle</p>
+							</div>
 						</div>
 						<div class="col">
-							<div class="participant"></div>
+							<div class="participant">
+								<img src="./img/cure.jpeg" alt="cure" />
+								<h3>A cure for wellness</h3>
+								<p>Subtitle</p>
+							</div>
 						</div>
 						<div class="col">
-							<div class="participant"></div>
+							<div class="participant">
+								<img src="./img/sinister.jpeg" alt="sinister" />
+								<h3>Sinister</h3>
+								<p>Subtitle</p>
+							</div>
 						</div>
 					</div>
 
@@ -196,10 +300,16 @@
 					<p>Più ascolti, più accurati saranno i suggerimenti</p>
 					<div class="gallery">
 						<div class="col">
-							<div class="participant"></div>
+							<div class="participant">
+								<img src="./img/radar.jpeg" alt="release-radar" />
+								<h3>Release Radar</h3>
+							</div>
 						</div>
 						<div class="col">
-							<div class="participant"></div>
+							<div class="participant">
+								<img src="./img/mixdaily.jpeg" alt="daily mix" />
+								<h3>Daily Mix 1</h3>
+							</div>
 						</div>
 					</div>
 
@@ -209,10 +319,24 @@
 					<p>Più ascolti, più accurati saranno i suggerimenti</p>
 					<div class="gallery">
 						<div class="col">
-							<div class="participant"></div>
+							<div class="participant">
+								<img
+									class="bord-rad-50"
+									src="./img/youg.jpeg"
+									alt="lana-del-rey"
+								/>
+								<h3>Lana Del Rey</h3>
+							</div>
 						</div>
 						<div class="col">
-							<div class="participant"></div>
+							<div class="participant">
+								<img
+									class="bord-rad-50"
+									src="./img/einaudi.jpeg"
+									alt="einaudi"
+								/>
+								<h3>Ludovico Einaudi</h3>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -221,6 +345,40 @@
 
 		<!-- FOOTER -->
 
-		<footer></footer>
+		<footer class="player">
+			<div class="player-album">
+				<img src="./img/sinister.jpeg" alt="album-cover" />
+				<div class="song">
+					<h5>Sinister</h5>
+					<p>Brano Nome</p>
+				</div>
+				<div class="options">
+					<i class="far fa-heart"></i>
+					<i class="far fa-folder"></i>
+				</div>
+			</div>
+
+			<div class="player-controller">
+				<div class="player-icons">
+					<i class="fas fa-random"></i>
+					<i class="fas fa-step-backward"></i>
+					<i class="far fa-play-circle"></i>
+					<i class="fas fa-step-forward"></i>
+					<i class="fas fa-redo-alt"></i>
+				</div>
+				<div class="song-length">
+					<div class="start">0.25</div>
+					<div class="line-back"></div>
+					<div class="line-front"></div>
+					<div class="end">4.35</div>
+				</div>
+			</div>
+			<div class="player-audio">
+				<i class="fas fa-list"></i>
+				<i class="fas fa-desktop"></i>
+				<i class="fas fa-volume-up"></i>
+				<div class="line-back"><div class="line-front"></div></div>
+			</div>
+		</footer>
 	</body>
 </html>
