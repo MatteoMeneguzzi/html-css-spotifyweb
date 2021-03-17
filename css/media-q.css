@@ -55,7 +55,7 @@
 		flex-basis: 220px;
 		min-width: 220px;
 		flex-wrap: wrap;
-		padding: 0px 20px;
+		padding: 0px 0px;
 		overflow-y: hidden;
 	}
 
@@ -67,6 +67,11 @@
 
 	/* aside.big div.logo, */
 	aside.big nav.navbar-side ul.small-nav,
+	aside section.profile ul.small-nav {
+		display: flex;
+		flex-direction: column;
+	}
+
 	aside section.profile ul.small-nav {
 		display: flex;
 		flex-direction: column;
