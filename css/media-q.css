@@ -1,4 +1,4 @@
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 0px) {
 	.main-content .gallery .col {
 		width: calc((100% / 2) - 15px);
 	}
