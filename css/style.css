@@ -618,7 +618,7 @@ footer p:hover {
 
 .player .player-audio .line-back {
 	position: relative;
-	width: 90px;
+	width: 50%;
 	height: 4px;
 	background: #5a5a5a;
 	border-radius: 10px;
